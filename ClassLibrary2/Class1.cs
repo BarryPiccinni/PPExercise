@@ -7,20 +7,6 @@ namespace ClassLibrary2
 {
     public class Checkout
     {
-        public class product
-        {
-            public string Code { get; set; }
-            public string Name { get; set; }
-            public double Price { get; set; }
-
-            public product(string code, string name, double price)
-            {
-                Code = code;
-                Name = name;
-                Price = price;
-            }
-        }
-
         private readonly List<product> items = new List<product>();
 
         public void scan(product item)
@@ -63,6 +49,20 @@ namespace ClassLibrary2
                 }
             }
             return total;
+        }
+    }
+
+    public class product
+    {
+        public string Code { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+
+        public product(string code, string name, double price)
+        {
+            Code = code;
+            Name = name;
+            Price = price;
         }
     }
 }
