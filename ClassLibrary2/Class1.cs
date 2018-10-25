@@ -18,7 +18,6 @@ namespace ClassLibrary2
         {
             double total = 0.00;
             int tea = 0;
-           // int strawb = 0;
             foreach (product p in items)
             {
                 switch (p.Code)
@@ -34,15 +33,6 @@ namespace ClassLibrary2
                             total += p.Price;
                             break;
                         }
-                        
-                    /*case "SR1":
-                        strawb++;
-                        total += p.Price;
-                        if (strawb > 2)
-                        {
-                            total -= strawb * 0.50;
-                        }
-                        break;*/
                     default:
                         total += p.Price;
                         break;
